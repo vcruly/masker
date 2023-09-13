@@ -1,6 +1,6 @@
 <?php
 
-function masker(String $string, int $lenght = 7, int $mask = null, String $side = null){
+function masker(String $string, int $lenght = 7, int $mask = 0, String $side = null){
 
   
 $masquerade = '';
