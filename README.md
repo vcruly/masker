@@ -10,7 +10,7 @@ include 'path to the masker.php file';
 ```
 ## Javascript / HTML
 ```
-<script> src='path to the masker.js file' </script>
+<script src='path to the masker.js file'></script>
 ```
 or 
 
