@@ -1,62 +1,139 @@
-# masker - PHP and JavaScript library for add a mask of character or patterns to an input String.
-Bring your String to the masquerade
+# MaskerCat - Custom string concatenation mask
+Concatenate a set of pre-define or custom character, strings or patterns to an given String, resulting in a mask of characters in the front, back, or both sides of the input.
 
 ## Installation
-Small library, just import the file and you're ready to go. Or copy and paste the code. :construction_worker:
-
-## PHP
-```
-include 'path to the masker.php file';
-```
-## Javascript / HTML
-```
-<script src='path to the masker.js file'></script>
-```
-or 
-
-```
-import { masker, custom_masker } from 'path to masker.js file';
-```
+`composer require rvc/maskercat`
 
 ## Usage
 
-### simple masker
+### Simple masker
+
 `masker (String string, int lenght, int mask, String side);`
 
-`Parameters`:
-- `String` (obligatory) - `String` to `mask`
-- `lenght` (optional) - `lenght` of the `mask`, default 7
-- `mask` (optional) - type of the `mask`, default 0
-  * 0 - abcdefghijklmnopqrstuvwxyz
-  * 1 - ABCDEFGHIJKLMNOPQRSTUVWXYZ
-  * 2 - 0123456789abcdefghijklmnopqrstuvwxyz
-  * 3 - 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ
-  * 4 - 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
-- side (optional): side of the string to put the `mask`, default left
-  * left
-  * right
-  * both
- 
-### custom masker
 
-`custom_masker (String string, int lenght, String mask, side)`
+Options:
 
-`Parameters`:
-- `String` (obligatory) - `String` to `mask`
-- `lenght` (obligatory) - `lenght` of the `mask`
-- `mask` (obligatory) - the `mask` to put in the `String`
-- side (optional): side of the string to put the `mask`, default left
-  * left
-  * right
-  * both
+<table>
+ <thead>
+  <tr> 
+   <th>Parameter</th> 
+   <th>Values</th>
+   <th>Description</th>
+   <th>Optional</th>
+  </tr>
+ </thead> 
+<tbody>
+  
+  <tr>
+    <td>string</td>
+    <td></td>
+    <td>The string to concatenate</td>
+    <td>Require</td>
+  </tr>
 
+  <tr>
+    <td>lenght</td>
+    <td>7 <b>(DEFAULT)</b></td>
+    <td>Lenght of the mask use to concatenate</td>
+    <td>Optional</td>
+  </tr>
 
-## Example
+  <tr>
+    <td>mask</td>
+    <td>
+     <ul>
+           <li>0 - abcdefghijklmnopqrstuvwxyz <b>(DEFAULT)</b> </li>
+           <li>1 - ABCDEFGHIJKLMNOPQRSTUVWXYZ</li>
+           <li>2 - 0123456789abcdefghijklmnopqrstuvwxyz</li>
+           <li>3 - 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ</li>
+           <li>4 - 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</li> 
+     </ul>
+    </td>
+    <td>Mask use to concatenate</td>
+    <td>Optional</td>
+  </tr>
+
+  <tr>
+    <td>mask</td>
+    <td>
+     <ul>
+           <li>left <b>(DEFAULT)</b></li>
+           <li>right</li>
+           <li>both</li>
+     </ul>
+    </td>
+    <td>Side of the string to put the mask</td>
+    <td>Optional</td>
+  </tr>
+
+</tbody> 
+</table>
+
+Example:
   ```
   masker('Hakuna matata');
 
   output: pgdfbiihakuna matata
   ```
+
+<hr>
+ 
+### custom masker
+
+`custom_masker (String string, int lenght, String mask, side)`
+
+Options:
+
+<table>
+ <thead>
+  <tr> 
+   <th>Parameter</th> 
+   <th>Values</th>
+   <th>Description</th>
+   <th>Optional</th>
+  </tr>
+ </thead> 
+<tbody>
+  
+  <tr>
+    <td>string</td>
+    <td></td>
+    <td>The string to concatenate</td>
+    <td>Require</td>
+  </tr>
+
+  <tr>
+    <td>lenght</td>
+    <td></td>
+    <td>Lenght of the mask use to concatenate</td>
+    <td>Require</td>
+  </tr>
+
+  <tr>
+    <td>mask</td>
+    <td></td>
+    <td>Mask use to concatenate</td>
+    <td>Require</td>
+  </tr>
+
+  <tr>
+    <td>mask</td>
+    <td>
+     <ul>
+           <li>left <b>(DEFAULT)</b></li>
+           <li>right</li>
+           <li>both</li>
+     </ul>
+    </td>
+    <td>Side of the string to put the mask</td>
+    <td>Optional</td>
+  </tr>
+
+</tbody> 
+</table>
+
+
+Example:
 ```
 custom_masker('Hakuna matata', 7, 'abcd453gh', 'right' );
 
