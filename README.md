@@ -78,9 +78,9 @@ Example:
 
 <hr>
  
-### custom masker
+### Custom masker
 
-`custom_masker (String string, int lenght, String mask, side)`
+`custom_masker (String string, int lenght, String mask, String side)`
 
 Options:
 
@@ -117,7 +117,7 @@ Options:
   </tr>
 
   <tr>
-    <td>mask</td>
+    <td>side</td>
     <td>
      <ul>
            <li>left <b>(DEFAULT)</b></li>
