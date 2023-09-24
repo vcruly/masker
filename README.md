@@ -46,7 +46,9 @@ Options:
            <li>1 - ABCDEFGHIJKLMNOPQRSTUVWXYZ</li>
            <li>2 - 0123456789abcdefghijklmnopqrstuvwxyz</li>
            <li>3 - 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ</li>
-           <li>4 - 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</li> 
+           <li>4 - 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                   abcdefghijklmnopqrstuvwxyz
+           </li> 
      </ul>
     </td>
     <td>Mask use to concatenate</td>
