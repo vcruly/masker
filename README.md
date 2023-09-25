@@ -144,7 +144,8 @@ custom_masker('Hakuna matata', 7, 'abcd453gh', 'right' );
 output: `Hakuna matatab5gdccc`
 ```
 
-
+## License
+MaskerCat is licensed under the MIT License.
 
 
 
