@@ -1,5 +1,5 @@
 {
-    "name": "rvc/masker-cat",
+    "name": "rvc/maskercat",
     "description": "Concatenate a set of pre-define or custom character, strings or patterns to an given String, resulting in a mask of characters in the front, back, or both sides of the input.",
     "type": "library",
     "license": "MIT",
