@@ -6,6 +6,8 @@ Concatenate a set of pre-define or custom character, strings or patterns to an g
 ## Installation
 `composer require rvc/maskercat`
 
+or just download and include the file in your project. 
+
 ## Usage
 
 ### Simple masker
