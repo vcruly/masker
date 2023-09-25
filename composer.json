@@ -1,0 +1,27 @@
+{
+    "name": "rvc/maskerCat",
+    "description": "Concatenate a set of pre-define or custom character, strings or patterns to an given String, resulting in a mask of characters in the front, back, or both sides of the input.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "library",
+        "open-source",
+        "php string",
+        "string-manipulation",
+        "pure-php",
+        "concatenation",
+        "mit-license",
+        "masking",
+        "string"
+    ],
+    "authors": [
+        {
+            "name": "Ruly Vega Crooks",
+            "email": "vcruly@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4|8.*"
+    }
+}
