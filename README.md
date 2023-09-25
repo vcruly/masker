@@ -1,6 +1,8 @@
 # MaskerCat - Custom string concatenation mask
 Concatenate a set of pre-define or custom character, strings or patterns to an given String, resulting in a mask of characters in the front, back, or both sides of the input.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Installation
 `composer require rvc/maskercat`
 
